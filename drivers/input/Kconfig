@@ -214,6 +214,12 @@ source "drivers/input/touchscreen/Kconfig"
 
 source "drivers/input/misc/Kconfig"
 
+source "drivers/input/fingerprint/Kconfig"
+
+source "drivers/input/fingerprint/sunwave/Kconfig"
+
+source "drivers/input/fingerprint/fpc_gm/Kconfig"
+
 source "drivers/input/sensors/smi130/Kconfig"
 
 source "drivers/input/rmi4/Kconfig"

@@ -15,15 +15,28 @@
 
 #include "himax_common.h"
 #include "himax_ic.h"
+#include "../lct_tp_fm_info.h"
 
 #define SUPPORT_FINGER_DATA_CHECKSUM 0x0F
 #define TS_WAKE_LOCK_TIMEOUT		(2 * HZ)
 #define FRAME_COUNT 5
 
 #if defined(HX_AUTO_UPDATE_FW)
-	char *i_CTPM_firmware_name = "HX83100_Amber_0B01_030E.bin";
+	char *i_CTPM_firmware_name = "TM057_Longcheer_L2300_CID0628_D05_C0B_1031-104712.i";
 	const struct firmware *i_CTPM_FW = NULL;
 #endif
+
+//#if defined(HX_AUTO_UPDATE_FW)
+//        unsigned char i_CTPM_FW[]=
+//        {
+                //#include "TM057_Longcheer_L2300_CID0606_D03_C02_1010-095937.i"
+                //#include "TM057_Longcheer_L2300_D05_C08_1214-053203.i"
+                //#include "TM057_Longcheer_L2300_D05_C09_0607.i"
+                //#include "TM057_Longcheer_L2300_D05_C0A_1014.i"
+//                #include "TM057_Longcheer_L2300_CID0628_D05_C0B_1031-104712.i"
+//        };
+//#endif
+
 
 /*static int tpd_keys_local[HX_KEY_MAX_COUNT] = HX_KEY_ARRAY;
 // for Virtual key array */

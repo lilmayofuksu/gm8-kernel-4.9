@@ -23,7 +23,12 @@ config RMNET_IPA
 	  for RmNet Data Driver and also exchange of QMI messages between
 	  A7 and Q6 IPA-driver.
 
-config GSI
+config USB_BAM
+	bool "USB BAM"
+	help
+	 no idea.
+
+config GS
 	bool "GSI support"
 	help
 	  This driver provides the transport needed to talk to the
